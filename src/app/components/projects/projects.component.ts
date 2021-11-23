@@ -11,7 +11,7 @@ export class ProjectsComponent implements OnInit {
   projects: Project[] = [
 
     new Project("index.html", "#", "../../../assets/img/project-1.png", "My Portfolio - 2021", "This is my 2021 portfolio", ["Html", "Css", "JavaScript", "Angular", "Heroku"]),
-    new Project("https://arsayportfolio.glitch.me", "https://github.com", "../../../assets/img/project-2.png", "My Previous Portfolio -2021 ", "This is my previous portfolio", ["Html", "Css", "JavaScript", "jQuery", "Glitch"]),
+    new Project("https://portafolioarsay.glitch.me/", "https://github.com", "../../../assets/img/project-2.png", "My Previous Portfolio -2021 ", "This is my previous portfolio", ["Html", "Css", "JavaScript", "jQuery", "Glitch"]),
     new Project("https://bootstoredev.glitch.me", "https://github.com", "../../../assets/img/project-3.png", "Bootstoredev", "Website Developed With Bootstrap", ["Html", "Bootstrap", "Glitch"]),
     new Project("https://portfoliobasic.glitch.me", "https://github.com", "../../../assets/img/project-4.png", "Portfolio Web Basic", "Basic Web Portfolio, one of my first projects with css and html", ["Html", "Css"]),
     new Project("https://coffedev.glitch.me", "https://github.com", "../../../assets/img/project-5.png", "DevCoffe", "Restaurant themed website with parallax effect ", ["Html", "Css", "JavaScript", "jQuery", "Glitch"])

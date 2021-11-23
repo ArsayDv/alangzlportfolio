@@ -1,0 +1,41 @@
+<header class="header" id="header">
+    <div class="container-header">
+            <nav class="w-100 nav">
+                <div class="logo">
+                    <h1 class="logo__title">Alan<span>Dev</span></h1>
+                </div>
+                <ul class="menu" id="menu" #menu>
+                    <li class="menu__items">
+                        <a href="#header">Home</a>
+                    </li>
+                    <li class="menu__items">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="menu__items">
+                        <a href="#skills">Skill Set</a>
+                    </li>
+                  <li class="menu__items">
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="menu__items">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="menu__items">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <button class="btn__github" role="button" type="button">
+                    <a href="https://github.com/ArsayDv" target="_BLANK">Github <i class="fab fa-github"></i></a>
+                </button>
+                <i class="fas fa-bars d-none bars" #bars (click)="menuShow()"></i>
+            </nav>
+        <div class="info">
+            <h1 class="info__title">Alan <span class="text-primary">González</span></h1>
+            <p class="lead info__subtitle">Web Developer</p>
+            <button role="button" type="button" class="btn btn-outline-primary info__btn"><a href="mailto:arsaycontact@gmail.com?subject=Contact Alan González! &body=Hello, I am communicating with you by mail, I want to know more information about your services!">Contact me</a></button>
+            <a href="#main" class="info__arrow">
+                <i class='bx bx-mouse' style="font-size: 1.5em;" ></i> Desplázate hacia abajo <i class='bx bx-down-arrow-alt' style="font-size: 1.30em" ></i> 
+            </a>
+        </div>
+    </div>
+</header>

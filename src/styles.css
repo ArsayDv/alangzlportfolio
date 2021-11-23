@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    color: #0e2431;
+    font-size: 1rem;
+    min-height: 100vh;
+}
+
+/*NAVBAR STYLES */
+
+.header{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-direction: column;
+}
+
+.container-header{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav{
+    top: 0;
+    background-color: #fff;
+    position: fixed;
+    z-index: 2;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px black;
+    padding: 0 20px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin: 0 10px;
+}
+
+.menu__items{
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.menu__items a{
+    text-decoration: none;
+    color: #202020;
+}
+
+.menu__items a:hover{
+    text-decoration: underline;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+
+.btn__github{
+    border: none;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 150px;
+    background-color: #2563eb;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn__github a{
+    color: #fff;
+}
+
+.btn__github a:hover{
+    color: #fff;
+}
+
+.logo__title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.logo__title span{
+    font-family: 'Poppins', sans-serif;
+    color: #2563eb;
+}
+
+/* PRSENTACIÓN */
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.info__title,
+.info__subtitle{
+    padding: 0;
+    margin: 0;
+}
+
+.info__title{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 3em;
+}
+
+.info__subtitle{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.info__arrow{
+    color: #333;
+    margin: 30px 0;
+    font-size: large;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.info__arrow i{
+    color: #2563eb;
+}
+
+.info__arrow:hover{
+    transform: translateY(0.40rem);
+    -webkit-transform: translateY(0.40rem);
+    -moz-transform: translateY(0.40rem);
+    -ms-transform: translateY(0.40rem);
+    -o-transform: translateY(0.40rem);
+}
+
+/* Main */
+
+    .about__info{
+    display: flex;
+    align-items: center;
+}
+
+.about__title{
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.about__info--p,
+.about__info--img{
+    margin: 0;
+    padding: 0;
+    width: 50%
+}
+
+.about__info--p{
+    width: 50%;
+    color: rgb(68 68 69);
+    font-size: 1.30em;
+}
+
+.about__info--img{
+    display: flex;
+    align-items: center;
+    height: 220px;
+}
+
+.title{
+    display: block;
+    font-size: 3rem;
+    color: #1e1e1e;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.description{
+    display: block;
+    font-size: 1.5rem;
+    color: #4f4f4f;
+    text-align: center;
+    font-weight: 200;
+}
+
+.description::after{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    content: "";
+    width: 65px;
+    height: 5px;
+    background-color: #0078ff;
+    bottom: auto;
+    margin: 20px auto;
+}
+
+.webs{
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-gap: 50px;
+}
+
+.project{
+    width: 100%;
+}
+
+.project img{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    vertical-align: top;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.project img:hover{
+    transform: scale(1.05, 1.05);
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    transition: all 400ms linear;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+}
+
+.project h1{
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.project h1 a,
+.project h1 a:hover{
+    transition: all 400ms linear;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+}
+
+.project a{
+    display: block;
+}
+
+.project h1 a:hover{
+    color: rgb(55, 71, 214);
+}
+
+.project p{
+    font-size: 1.5em;
+}
+
+.project .technologies{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project .technologies .badge{
+    text-transform: uppercase;
+    font-family: 'Overpass', sans-serif;
+    color: #cbd5e0;
+    background-color: #2d3748;
+    margin: 0.15rem 0.25rem;
+    padding: 10px 15px;
+}
+
+.skills{
+    flex-wrap: wrap;
+}
+
+.skill{
+    font-size: 500%;
+    color: grey;
+    margin: 10px;
+    padding: 10px;
+}
+
+.skill:hover{
+    cursor: pointer;
+    color: #0d6efd;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.service-row{
+    margin: 0 10px;
+}
+
+.service{
+    flex-grow: 1;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.service-box{
+    width: 35%;
+    margin: 0 auto;
+}
+
+.service-box .service-ico{
+    height: 100%;
+    color: #1e1e1e;
+}
+
+.service-box .ico-circle {
+    transition: all 500ms ease;
+    font-size: 4rem;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+.service-box:hover .ico-circle{
+    transition: all 500ms ease;
+    color: #fff;
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.service-ico .ico-circle{
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #0078ff;
+    display: block;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ico-circle i{
+    font-size: 3rem;
+}
+
+.service-content{
+    margin-top: 15px;
+}
+
+.s-title{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .4rem 0;
+    color: #1e1e1e;
+    margin-bottom: 0;
+}
+
+/* FOOTER */
+.footer{
+    position: absolute;
+    bottom: auto;
+    background-color: #0d6efd
+}
+
+.footer-content{
+    padding: 0 20px;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social i{
+    font-size: 300%;
+    color: #d4d4d4;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+    transition: all 300ms linear;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+}
+
+.social i:hover{
+    color: #fff;
+}
+
+.bars{
+    font-size: x-large;
+    margin-left: 20px;
+}
+
+.info__btn:hover a{
+    color: #fff;
+}
